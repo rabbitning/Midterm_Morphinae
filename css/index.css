@@ -1,0 +1,111 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: black; */
+    color: white;
+    height: 100%;
+    width: 100%;
+    line-height: 1.5;
+
+}
+
+* {
+    box-sizing: border-box;
+    /* background-color: inherit; */
+    /* color: inherit; */
+    list-style: none;
+    text-decoration: none;
+    /* cursor: none; */
+    /* cursor:url('../img/dii.ico'), auto; */
+
+}
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.op {
+    z-index: 1;
+}
+
+.op video {
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+}
+
+.bgimg {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    /* height: 110vh; */
+    width: 120%;
+    height: 120%;
+    z-index: -1;
+
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content:hover {
+    height: 700px;
+    width: 700px;
+}
+.the_ball {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.ball_component {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.p1 {
+    top: 80px;
+    left: 80px;
+}
+
+.p2 {
+    top: 100px;
+    left: 400px;
+}
+
+.p3 {
+    top: 350px;
+    left: 200px;
+}
+
+.content:hover .p1 {
+    top: 0;
+    left: -100px;
+}
+
+.content:hover .p2 {
+    top: 0px;
+    left: 600px;
+}
+
+.content:hover .p3 {
+    top: 500px;
+    left: -60px;
+}
+
