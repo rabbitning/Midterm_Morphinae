@@ -1,7 +1,14 @@
+
 $(() => {
-    setTimeout(() => {
-        $('.op').fadeOut(800);
-    }, 4500);
+    // setTimeout(() => {
+    //     $('.op').fadeOut(800);
+    // }, 4500);
+    // $('body').fadeIn(1000);
+    
+
+
+        
+    
 
 
     $(document).mousemove((e) => {

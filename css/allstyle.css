@@ -9,6 +9,9 @@ html {
     color: #ccc;
     min-height: 100%;
     min-width: 100%;
+    animation-name: fin;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
 ::-webkit-scrollbar {
@@ -22,12 +25,41 @@ html {
     line-height: 2;
 }
 
+
+
 body {
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
     width: 100%;
+}
+
+.op {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.logo {
+    height: 40%;
+    width: auto;
+}
+
+.logo_text {
+    color: black;
+    font-size: 2rem;
+    font-weight: lighter;
+    letter-spacing: 5px;
 }
 
 .header {
@@ -95,4 +127,13 @@ body {
     height: 300%;
     width: 300%;
     z-index: -1;
+}
+
+@keyframes fin {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

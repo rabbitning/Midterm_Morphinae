@@ -19,7 +19,20 @@ html {
 
 }
 
+@keyframes fin {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 body {
+    animation-name: fin;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
     overflow-y: hidden;
     overflow-x: hidden;
     height: 100%;
@@ -27,14 +40,40 @@ body {
 }
 
 .op {
-    z-index: 1;
-}
-
-.op video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 100vw;
     background-color: #fff;
+    z-index: 1;
 }
+
+.logo {
+    height: 40%;
+    width: auto;
+}
+
+.logo_text {
+    color: black;
+    font-size: 2rem;
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
+
+/* .op video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+} */
 
 .bgimg {
     position: absolute;
@@ -54,58 +93,123 @@ body {
     height: 100%;
     width: 100%;
 }
+
 .content {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.content:hover {
-    height: 700px;
-    width: 700px;
-}
-.the_ball {
+
+.core {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    height: 500px;
+    width: 500px;
+    margin: auto;
 }
 
-.ball_component {
+.core_component {
     position: absolute;
-    height: 60px;
-    width: 60px;
-    background-color: #fff;
-    transition: 0.5s;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition-property: top bottom left right;
+    transition: 0.4s;
+    height: 500px;
+    width: auto;
 }
 
-.p1 {
-    top: 80px;
-    left: 80px;
+
+.content .core_component {
+    transition-delay: 0s;
 }
 
-.p2 {
-    top: 100px;
-    left: 400px;
+.content .c2_core {
+    transition-delay: 0.4s;
 }
 
-.p3 {
-    top: 350px;
+.content:hover .core_component {
+    transition-delay: 1s;
+}
+
+.content:hover .c4_left {
+    transition-delay: 0.2s;
+}
+
+.content:hover .c4_up,
+.content:hover .c0_up {
+    transition-delay: 0.4s;
+}
+
+.content:hover .c4_right {
+    transition-delay: 0.6s;
+}
+
+.content:hover .c4_down,
+.content:hover .c0_down {
+    transition-delay: 0.8s;
+}
+
+.content:hover .c4_down,
+.content:hover .c0_down {
+    top: 200px;
+
+}
+
+.content:hover .c4_up,
+.content:hover .c0_up {
+    top: -200px;
+}
+
+.content:hover .c4_left {
+    left: -200px;
+}
+
+.content:hover .c4_right {
     left: 200px;
 }
 
-.content:hover .p1 {
-    top: 0;
+.content:hover .c3_shadow {
+    opacity: 0;
+}
+
+.content:hover .c2_left {
+    top: 90px;
     left: -100px;
 }
 
-.content:hover .p2 {
-    top: 0px;
-    left: 600px;
+.content:hover .c2_right {
+    top: 90px;
+    left: 100px;
 }
 
-.content:hover .p3 {
-    top: 500px;
-    left: -60px;
+.content:hover .c1_down {
+    top: 50px;
+}
+
+.content:hover .c1_downleft {
+    top: 40px;
+    left: -40px;
+}
+
+.content:hover .c1_downright {
+    top: 40px;
+    left: 40px;
+}
+
+.content:hover .c1_left {
+    left: -70px;
+}
+
+.content:hover .c1_right {
+    left: 70px;
+}
+
+.content:hover .c2_core {
+    transition-delay: 0s;
+    transform: rotateZ(180deg);
 }
 
