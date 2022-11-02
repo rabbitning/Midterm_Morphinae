@@ -133,13 +133,13 @@ body {
 
 .nav_list {
     /* position: fixed; */
-    top: 70px;
-    right: 0;
+    /* top: 70px; */
+    /* right: 0; */
     /* display: none; */
     display: flex;
     /* flex-direction: row; */
     align-items: center;
-    /* height: 100vh; */
+    height: 100%;
     /* width: 193px; */
     /* background-color: #4b4b4b; */
     /* border-left: 1px solid #ccc; */
@@ -152,12 +152,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 100%; */
-    font-size: 2rem;
-    /* font-weight: 200; */
-    /* padding: 10px 10px; */
+    height: 100%;
+    width: 150px;
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing: 1px;
     transition: 0.2s;
-    /* border-bottom: 1px solid #ccc; */
 }
 
 .nav_item:hover {
