@@ -10,6 +10,7 @@ $(() => {
         }, 50);
     });
     $('.content').hover(() => {
+        // $('.home_title').fadeOut(200);
         setTimeout(() => {
             $('.menu_content_item').css('display', 'flex');
             $('.menu_contact').css('display', 'flex');
