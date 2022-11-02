@@ -31,9 +31,6 @@
     width: 100%;
     text-align: justify;
     font-size: 1.5rem;
-    /* font-weight: 600; */
-    /* background: rgba(0, 0, 0, 0); */
-    /* background-color: blueviolet; */
 }
 
 .content_text strong {
@@ -54,8 +51,6 @@ hr {
 
 .main img {
     height: 100%;
-    /* width: ; */
-    /* margin: auto; */
 }
 
 .top_btn {
@@ -64,7 +59,6 @@ hr {
     right: 80px;
     display: none;
     text-align: center;
-    /* text-anchor: middle;  */
     height: 50px;
     width: 50px;
     border-radius: 100%;

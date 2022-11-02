@@ -37,8 +37,6 @@ html {
     color: inherit;
 }
 
-
-
 body {
 
     display: flex;
@@ -79,12 +77,10 @@ body {
     top: 0;
     left: 0;
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     height: 70px;
     width: 100%;
     background-color: #4b4b4b;
-    padding: 0 20px;
     border-bottom: 1px solid #ccc;
 }
 
@@ -92,11 +88,16 @@ body {
     display: flex;
     align-items: center;
     height: 100%;
+    padding: 0 30px;
+    transition: 0.2s;
+}
+
+.game_icon:hover {
+    background-color: #6b6b6b;
 }
 
 .game_icon img {
     height: 90%;
-    /* width: 100%; */
 }
 
 .icon_text {
@@ -106,47 +107,11 @@ body {
     padding: 0 10px;
 }
 
-.game_icon:hover {
-
-}
-
-/* .nav_btn {
-    height: 50px;
-    width: 50px;
-    transition: 0.2s;
-}
-
-.nav_btn:hover {
-    cursor: pointer;
-} */
-
-
-/* .nav_icon {
-    height: 100%;
-    transform: scale(1);
-    transition: 0.2s;
-}
-.nav_icon:hover {
-    transform: scale(1.2);
-} */
-
-
 .nav_list {
-    /* position: fixed; */
-    /* top: 70px; */
-    /* right: 0; */
-    /* display: none; */
     display: flex;
-    /* flex-direction: row; */
     align-items: center;
     height: 100%;
-    /* width: 193px; */
-    /* background-color: #4b4b4b; */
-    /* border-left: 1px solid #ccc; */
-    /* z-index: 2; */
 }
-
-
 
 .nav_item {
     display: flex;
@@ -164,14 +129,13 @@ body {
     background-color: #6b6b6b;
 }
 
-
-
-/* .container {
-    width: 80%;
-    margin: auto;
-} */
-
-
+.nav_item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
 
 .title {
     align-self: center;
@@ -181,8 +145,6 @@ body {
     border-bottom: 2px solid;
 }
 
-
-
 .footer {
     position: relative;
     display: flex;
@@ -191,14 +153,7 @@ body {
     height: 150px;
     width: 100%;
     color: #ccc;
-    /* background-color: #4b4b4b; */
-
 }
-
-/* .footer div {
-
-    line-height: 150px;
-} */
 
 .footer_img {
     position: absolute;
