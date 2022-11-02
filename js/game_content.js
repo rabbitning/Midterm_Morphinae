@@ -2,7 +2,6 @@ $(() => {
     setTimeout(() => {
         $(window).scrollTop(0);
         $(window).scroll(() => {
-            // setInterval(() => {
             if ($(window).scrollTop() == 0) {
                 if (!$('.top_btn').is(':animated')) {
                     $('.top_btn').fadeOut(300);
@@ -14,6 +13,5 @@ $(() => {
                 }
             }
         });
-    }, 3000);
-
-})
+    }, 1500);
+});

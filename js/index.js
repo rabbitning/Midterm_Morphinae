@@ -2,7 +2,6 @@ $(() => {
     $(document).mousemove((e) => {
         $('.bgimg').css({ 'left': ((-0.05 * $(window).width()) + ((e.pageX - ($(window).width() / 2)) / -20)), 'top': ((-0.5 * $(window).height()) + ((e.pageY - ($(window).height() / 2)) / -20)) });
     });
-
     $('.close_btn').click(() => {
         $('.menu').css('display', 'none');
         setTimeout(() => {
@@ -10,7 +9,6 @@ $(() => {
         }, 50);
     });
     $('.content').hover(() => {
-        // $('.home_title').fadeOut(200);
         setTimeout(() => {
             $('.menu_content_item').css('display', 'flex');
             $('.menu_contact').css('display', 'flex');
