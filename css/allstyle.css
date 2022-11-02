@@ -1,5 +1,14 @@
+@keyframes fin {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 16px;
     background: url('../img/background.png');
     background-repeat: no-repeat;
@@ -10,7 +19,7 @@ html {
     min-height: 100%;
     min-width: 100%;
     animation-name: fin;
-    animation-duration: 2s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
 
@@ -68,22 +77,29 @@ body {
     left: 0;
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 70px;
     width: 100%;
     background-color: #4b4b4b;
-    padding: 0 20px;
+    padding: 0 10px;
     border-bottom: 1px solid #ccc;
 }
 
-.header img {
-    height: 100%;
-    width: 100%;
-}
+
 
 .game_icon {
-    height: 60px;
-    width: 100px;
-    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.game_icon img {
+    height: 90%;
+    /* width: 100%; */
+}
+.icon_text {
+    color: #ccc;
+    font-size: 2rem;
+    font-weight: 100;
+    padding: 0 10px;
 }
 
 /* .container {
@@ -127,13 +143,4 @@ body {
     height: 300%;
     width: 300%;
     z-index: -1;
-}
-
-@keyframes fin {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
