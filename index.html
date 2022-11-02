@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ever Live</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./img/morphinae_logo.ico" type="image/x-icon">
     <script src="./js/jquery-3.6.1.min.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/index.js"></script>
@@ -17,7 +22,9 @@
 <body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;" oncopy="return false;">
 
     <main class="main">
-        <img src="./img/background_desert.png" alt="" class="bgimg">
+
+        <img src="./img/background.webp" alt="" class="bgimg">
+
         <div class="content">
             <div class="core">
                 <img src="./img/core/core_0_down.webp" alt="" class="core_component c0_down">
@@ -37,6 +44,24 @@
                 <img src="./img/core/core_4_right.webp" alt="" class="core_component c4_right">
                 <img src="./img/core/core_4_up.webp" alt="" class="core_component c4_up">
                 <img src="./img/core/core_5_light.webp" alt="" class="core_component c5_light">
+            </div>
+            <div class="menu">
+                <div class="menu_header menu_item">
+                    <img src="./img/morphinae_logo_white.webp" alt="" class="menu_header_item icon">
+                    <div class="menu_header_item title">MORPHINAE</div>
+                    <div class="menu_header_item close_btn">╳</div>
+                </div>
+                <div class="menu_content menu_item">
+                    <a href="./story.html" class="menu_content_story menu_content_item">
+                        <div class="story_title">Story</div>
+                    </a>
+                    <a href="./system.html" class="menu_content_system menu_content_item">
+                        <div class="system_title">System</div>
+                    </a>
+                </div>
+                <div class="menu_contact menu_item">
+                    <a href="./contact.html" class="contact_text">Contact Us</a>
+                </div>
             </div>
         </div>
     </main>
