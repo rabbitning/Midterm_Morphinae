@@ -1,7 +1,7 @@
 let tid;
 $(document).ready(function () {
     $(document).mousemove(function (e) {
-        $('.bgimg').css({ 'left': ((-0.05 * $(window).width()) + ((e.pageX - ($(window).width() / 2)) / -20)), 'top': ((-0.5 * $(window).height()) + ((e.pageY - ($(window).height() / 2)) / -20)) });
+        $('.bgimg').css({ 'left': ((-0.05 * $(window).width()) + ((e.pageX - ($(window).width() / 2)) / -20)), 'top': ((-0.6 * $(window).height()) + ((e.pageY - ($(window).height() / 2)) / -20)) });
     });
     $('.close_btn').click(function () {
         $('.menu').css('display', 'none');
