@@ -11,7 +11,14 @@ $(() => {
             setTimeout("location.href='" + x.attr('href') + "'", 600);
         }
         else {
-            () => { "location.href='#'" };
+            var i = $(window).scrollTop();
+            var tid = setInterval(() => {
+                i -= 20;
+                $(window).scrollTop(i);
+                if (i <= 0) {
+                    clearInterval(tid);
+                }
+            }, 1);
         }
-    })
+    });
 });
