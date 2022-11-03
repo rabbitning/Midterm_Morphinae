@@ -40,10 +40,10 @@ body {
     justify-content: space-between;
     height: 100%;
     width: 100%;
-    opacity: 0;
-    animation-name: fin;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+}
+
+b:hover {
+    cursor: pointer;
 }
 
 .loading {
@@ -64,11 +64,16 @@ body {
     height: 100%;
     width: 100%;
     background-color: #fff;
+
 }
 
 .logo {
     height: 40%;
     width: auto;
+    opacity: 0;
+    animation-name: fin;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 .logo_text {
@@ -135,7 +140,7 @@ body {
     background-color: #6b6b6b;
 }
 
-.nav_item a {
+.nav_item b {
     display: flex;
     justify-content: center;
     align-items: center;

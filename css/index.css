@@ -47,15 +47,15 @@ html {
     text-decoration: none;
 }
 
+b:hover {
+    cursor: pointer;
+}
+
 body {
     overflow-y: hidden;
     overflow-x: hidden;
     height: 100%;
     width: 100%;
-    opacity: 0;
-    animation-name: fin;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
 }
 
 .loading {
@@ -81,6 +81,10 @@ body {
 .logo {
     height: 40%;
     width: auto;
+    opacity: 0;
+    animation-name: fin;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 .logo_text {
