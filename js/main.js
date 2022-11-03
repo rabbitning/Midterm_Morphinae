@@ -5,7 +5,7 @@ $(() => {
         <div class="logo_text">MORPHINAE</div>
     </div>
     `);
-    $('body').ready(() => {
+    setTimeout(() => {
         $('.op').fadeOut(500);
-    });
+    }, 1500);
 });

@@ -20,10 +20,10 @@ html {
     color: #ccc;
     min-height: 100%;
     min-width: 100%;
+    opacity: 0;
     animation-name: fin;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    opacity: 0;
 }
 
 ::-webkit-scrollbar {
@@ -68,7 +68,7 @@ body {
 .logo_text {
     color: black;
     font-size: 2rem;
-    font-weight: lighter;
+    font-weight: 200;
     letter-spacing: 5px;
 }
 
