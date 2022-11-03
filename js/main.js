@@ -8,7 +8,7 @@ $(() => {
         var x = $(this);
         if (x.attr('href') != '#') {
             $('html').fadeOut();
-            setTimeout("location.href='" + x.attr('href') + "'", 600);
+            setTimeout("location.href='" + x.attr('href') + "'", 500);
         }
         else {
             var i = $(window).scrollTop();
