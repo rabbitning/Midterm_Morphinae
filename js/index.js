@@ -9,11 +9,13 @@ $(() => {
         }, 50);
     });
     $('.content').hover(() => {
+        $('.home_title').fadeOut();
         setTimeout(() => {
             $('.menu_content_item').css('display', 'flex');
             $('.menu_contact').css('display', 'flex');
         }, 2000);
     }, () => {
+        $('.home_title').fadeIn();
         $('.menu_content_item').css('display', 'none');
         $('.menu_contact').css('display', 'none');
     });
