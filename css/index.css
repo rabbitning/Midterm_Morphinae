@@ -12,15 +12,19 @@
     0% {
         top: -10%;
     }
+
     25% {
         top: -20%;
     }
+
     50% {
         top: -10%;
     }
+
     75% {
         top: 0%;
     }
+
     100% {
         top: -10%;
     }
@@ -151,7 +155,7 @@ body {
 
 .content:hover .c5_light {
     transition-delay: 1.3s;
-    transform: scale(3);
+    transform: scale(2.5);
 }
 
 .content:hover .c4_down,
@@ -242,7 +246,7 @@ body {
     transition: 0.5s;
     transition-delay: 0s;
     opacity: 0;
-    background-color: rgba(99, 188, 230, 0.8);
+    background-color: rgba(89, 106, 125, 0.8);
     border: 1px solid #fff;
 }
 
