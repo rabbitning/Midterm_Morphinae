@@ -1,6 +1,6 @@
-$(() => {
-    $(window).ready(() => {
-        setTimeout(() => {
+$(document).ready(function () {
+    $(window).ready(function () {
+        setTimeout(function () {
             $('.loading').fadeOut(500);
         }, 1500);
     });
@@ -12,7 +12,7 @@ $(() => {
         }
         else {
             var i = $(window).scrollTop();
-            var tid = setInterval(() => {
+            var tid = setInterval(function () {
                 i -= 20;
                 $(window).scrollTop(i);
                 if (i <= 0) {
