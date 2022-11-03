@@ -38,10 +38,6 @@ html {
     line-height: 1.5;
     font-size: 16px;
     font-weight: 400;
-    opacity: 0;
-    animation-name: fin;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
 }
 
 * {
@@ -56,20 +52,30 @@ body {
     overflow-x: hidden;
     height: 100%;
     width: 100%;
+    opacity: 0;
+    animation-name: fin;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
-.op {
+.loading {
     position: fixed;
     top: 0;
     left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.loading_box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-color: #fff;
-    z-index: 1;
 }
 
 .logo {
@@ -241,8 +247,8 @@ body {
 
 .menu {
     position: absolute;
-    height: 0vh;
-    width: 0vw;
+    height: 0;
+    width: 0;
     transition: 0.5s;
     transition-delay: 0s;
     opacity: 0;
@@ -257,11 +263,10 @@ body {
     opacity: 1;
 }
 
-.menu_item {
+.menu_box {
     display: none;
-    animation-name: fin;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
+    height: 100%;
+    width: 100%;
 }
 
 .menu_header {
@@ -304,7 +309,7 @@ body {
 
 .menu_content_item {
     position: relative;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -342,9 +347,6 @@ body {
 }
 
 .menu_contact {
-    display: none;
-    justify-content: center;
-    align-items: center;
     height: 10%;
     width: 100%;
     border-top: 1px solid #fff;
